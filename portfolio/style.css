@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(146, 146, 146);
+    
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:transparent;
+    text-align: center;
+    margin-block: 50px;
+    -webkit-text-stroke: 0.2px #ffffff;
+}
+
+h2 {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    align-content: center;
+    color: #ffffff;
+}
+
+li{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    align-content: center;
+    color: #ffffff;
+}
+
+div img {
+    height: 500px;
+    border-radius: 15px;
+    border:8px solid #ffffff;
+    display: block;
+    transition: all 2s;
+}
+
+div video {
+    border-radius: 15px;
+    border:8px solid #ffffff;
+}
+
+div img:hover {
+    height: 600px;
+    rotate: 180deg;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+    
+
+.div4 {
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.div6 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.div7 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.div8 {
+    grid-row-start: 3;
+}
+
+.div9 {
+    grid-row-start: 3;
+}
+
+.div10 {
+    grid-row-start: 4;
+}
+
