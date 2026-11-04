@@ -8,10 +8,12 @@
 body {
     background-color: #242424;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;          
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* HEADER */
 
 header {
     background-color: #171717;
@@ -45,7 +47,6 @@ nav a:hover {
     color: #d6b98c;
 }
 
-/* TITRES */
 
 h1 {
     font-family: Impact, sans-serif;
@@ -62,7 +63,6 @@ h2 {
     font-family: Arial, sans-serif;
 }
 
-/* CONTENU */
 
 .parent {
     display: grid;
@@ -104,7 +104,6 @@ li {
     line-height: 1.5;
 }
 
-/* BOUTONS */
 
 .bouton {
     display: inline-block;
@@ -123,14 +122,13 @@ li {
     transform: translateY(-3px);
 }
 
-/* FOOTER */
 
 footer {
     background-color: #171717;
     border-top: 1px solid #555;
     text-align: center;
     padding: 35px 20px;
-    margin-top: 80px;
+    margin-top: auto;
     color: #aaa;
     line-height: 1.8;
 }
@@ -140,7 +138,6 @@ footer a {
     text-decoration: none;
 }
 
-/* RESPONSIVE */
 
 @media screen and (max-width: 750px) {
 
@@ -160,6 +157,7 @@ footer a {
     }
 
     .parent {
+        flex: 1;
         grid-template-columns: 1fr;
     }
 
